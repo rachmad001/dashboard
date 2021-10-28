@@ -1,0 +1,55 @@
+﻿<link href="@Href("~/Content/fontawesome/css/all.css")" rel="stylesheet" />
+<link href="@Href("~/Content/Shared/Header/style.css")" rel="stylesheet" />
+
+<div class="header">
+    <div id="menu" onclick="seeOption()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <img src="@Url.Content("~/Content/Login/logo.jpeg")" alt="Alternate Text" class="logo"/>
+    <img src="@Url.Content("~/Content/Shared/Header/profile dummy.jpg")" alt="Alternate Text" class="profile"/>
+</div> 
+<div class="slideshow">
+    <div id="content" class="start">
+        <div class="data">
+            <img src="@Url.Content("~/Content/Slideshow/bara.jpeg")" alt="Alternate Text" />
+            <div class="information">
+                <div class="judul">Judul</div>
+                <div class="isi">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <img src="@Url.Content("~/Content/Slideshow/mine.jpeg")" alt="Alternate Text" />
+            <div class="information">
+                <div class="judul">Judul</div>
+                <div class="isi">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <img src="@Url.Content("~/Content/Slideshow/tambang.jpg")" alt="Alternate Text" />
+            <div class="information">
+                <div class="judul">Judul</div>
+                <div class="isi">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left" onclick="prev()"><span style="font-size: 40px; color: white;"><i class="fas fa-chevron-circle-left"></i></span></div>
+    <div class="right" onclick="next()"><span style="font-size: 40px; color: white;"><i class="fas fa-chevron-circle-right"></i></span></div>
+    <div id="link" class="menuOption">
+        <div class="chosee" onclick="toroute('Dashboard', 'Index')">Beranda</div>
+        <div class="chosee" onclick="toroute('Dashboard', 'Dashboard')">Dashboard</div>
+        <div class="chosee" onclick="toroute('Dashboard', 'Profil')">Profil</div>
+        <div class="chosee" onclick="toroute('Dashboard','Keluar')">Keluar</div>
+    </div>
+</div>
+<script src="@Url.Content("~/Content/Shared/Header/app.js")"></script>

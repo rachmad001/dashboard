@@ -1,0 +1,74 @@
+﻿.header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 10% 85%;
+}
+
+#menu {
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-rows: 10px 10px 10px;
+    grid-row-gap: 5px;
+}
+
+.line {
+    background-color: #5BAE67;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.profile {
+    position: absolute;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.boxMenu {
+    height: 0;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.startBoxMenu {
+    height: 300px;
+}
+
+.menuOption {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    height: 300px;
+    background-color: darkseagreen;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    transition: all 1s;
+    text-align: center;
+}
+
+.startMenu {
+    top: 0px;
+}
+
+.chosee {
+    width: 97%;
+    margin-left: 1.5%;
+    padding-top: 19px;
+    border-bottom: 5px solid white;
+    font-size: 25px;
+    color: white;
+}

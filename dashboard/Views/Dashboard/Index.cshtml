@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dashboard</title>
+    <link href="@Href("~/Content/Dashboard/style.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Content/Dashboard/app.js")"></script>
+</head>
+<body>
+    @Html.Partial("Header")
+    <div class="informationMenu">
+        <div class="judul">Menu</div>
+        <div class="line"></div>
+        <div class="isi">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut
+        </div>
+    </div>
+    <div class="mainMenu">
+        <div></div>
+        <div class="choose" onclick="toroute('Simper', 'Index')">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/signature 2.png")" alt="Alternate Text" />
+            <div>Simper</div>
+        </div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/padlock 2.png")" alt="Alternate Text"/>
+            <div>Mine Permit</div>
+        </div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/Group 64.png")" alt="Alternate Text" />
+            <div>SHE Test</div>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/process 2.png")" alt="Alternate Text" />
+            <div>SAP</div>
+        </div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/engineering 1.png")" alt="Alternate Text" />
+            <div>Commissioning</div>
+        </div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/eye 1.png")" alt="Alternate Text" />
+            <div>SAO</div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="choose">
+            <img src="@Url.Content("~/Content/Dashboard/Icon/dumbbell 1.png")" alt="Alternate Text" />
+            <div>Fit To Work</div>
+        </div>
+    </div>
+    @Html.Partial("Footer")
+</body>
+</html>
+

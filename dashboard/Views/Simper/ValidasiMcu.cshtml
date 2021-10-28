@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="@Href("~/Content/fontawesome/css/all.css")" rel="stylesheet" />
+    <link href="@Href("~/Content/fontawesome/css/fontawesome.css")" rel="stylesheet" />
+    <style>
+        .backButton {
+            padding: 5px 8px;
+            background-color: #B8DE9C;
+            color: white;
+            font-size: 40px;
+        }
+        .mainContent {
+            width: 60%;
+            margin: auto;
+        }
+            .mainContent .judul {
+                text-align: center;
+                color: #19863E;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .mainContent .progress {
+                display: grid;
+                grid-template-columns: 50px auto 50px auto 50px auto 50px;
+                border: 1px solid red;
+            }
+                .mainContent .progress .label {
+                    text-align: center;
+                    width: calc(100% + 60px);
+                    margin-left: -30px;
+                    border: 1px solid blue;
+                    font-size: 20px;
+                }
+                .mainContent .progress .circle {
+                    background-color: #5BAE67;
+                    text-align: center;
+                    color: white;
+                    font-size: 20px;
+                    padding: 15px 0;
+                    border-radius: 50%;
+                    border: 1px solid red;
+                }
+                .mainContent .progress .line {
+                    width: 105%;
+                    margin-top: 22px;
+                    margin-left: -2.5%;
+                    background-color: #C6C6C6;
+                    height: 10px;
+                    border: 1px solid red;
+                    z-index: -1;
+                }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="backButton"><i class="fas fa-long-arrow-alt-left"></i></span>
+    </div>
+    <div class="mainContent">
+        <div class="judul">Pembuatan Simper</div>
+        <div class="progress">
+            <div class="circle">
+                <label>1</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>2</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>3</label>
+            </div>
+            <div class="line"></div>
+            <div class="circle">
+                <label>4</label>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="label">validasi mcu</div>
+            <div></div>
+            <div class="label">validasi mcu</div>
+            <div></div>
+            <div class="label">validasi mcu</div>
+            <div></div>
+            <div class="label">validasi mcu</div>
+        </div>
+    </div>
+</body>
+</html>

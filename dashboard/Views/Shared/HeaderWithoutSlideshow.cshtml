@@ -1,0 +1,25 @@
+﻿<link href="@Href("~/Content/Shared/HeaderWithoutSlideshow/style.css")" rel="stylesheet" />
+<div class="header">
+    <div id="menu" onclick="seeOption()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <img src="@Url.Content("~/Content/Login/logo.jpeg")" alt="Alternate Text" class="logo" />
+    <img src="@Url.Content("~/Content/Login/logo.jpeg")" alt="Alternate Text" class="profile" />
+</div>
+<div class="boxMenu" id="boxMenu">
+    <div id="link" class="menuOption">
+        <div class="chosee" onclick="tolink('Index')">Beranda</div>
+        <div class="chosee" onclick="tolink('Dashboard')">Dashboard</div>
+        <div class="chosee" onclick="tolink('Profil')">Profil</div>
+        <div class="chosee" onclick="tolink('Keluar')">Keluar</div>
+    </div>
+</div>
+<script>
+    var menu = document.getElementById("boxMenu");
+    function seeOption() {
+        document.getElementById("link").classList.toggle("startMenu");
+        menu.classList.toggle("startBoxMenu");
+    }
+</script>
